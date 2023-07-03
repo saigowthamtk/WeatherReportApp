@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">JPMorganWeatherapp</string>
+    <string name="title_activity_jpsplash_screen">JPSplashScreenActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="temperature_min">Temperature Min :</string>
+    <string name="temperature_max">Temperature Max :</string>
+    <string name="feels_like">Feels_Like :</string>
+    <string name="pressure">Pressure :</string>
+    <string name="humidity">Humidity :</string>
+    <string name="wind">Wind :</string>
+    <string name="clouds">Clouds :</string>
+    <string name="clouds_wind">Clouds/Winds</string>
+    <string name="sun">Sun</string>
+    <string name="sun_rise">Sunrise :</string>
+    <string name="sun_set">Sunset :</string>
+    <string name="todaydetails">Today Details</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

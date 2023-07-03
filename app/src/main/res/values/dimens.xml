@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="text_small_size">18dp</dimen>
+    <dimen name="dimn_small_size">5dp</dimen>
+    <dimen name="dimn_small_medium">10dp</dimen>
+    <dimen name="dimn_small_large">15dp</dimen>
+    <dimen name="dimn_small_extra_large">20dp</dimen>
+    <dimen name="dimn_icon_large">220dp</dimen>
+
+</resources>

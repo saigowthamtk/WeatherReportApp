@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_sky_blue"
+    tools:context=".weatherapp.splashscreen.JPSplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="@dimen/dimn_icon_large"
+        android:layout_height="@dimen/dimn_icon_large"
+        android:src="@drawable/app_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:textColor="@android:color/white"
+        android:textSize="@dimen/dimn_small_extra_large"
+        android:text="Welcome to JPChase Weather App"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SplashScreenImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
