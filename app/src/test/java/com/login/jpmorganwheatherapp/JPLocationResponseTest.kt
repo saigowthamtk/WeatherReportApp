@@ -18,7 +18,7 @@ class JPLocationResponseTest {
     fun testNotValidKelvin() {
         val fahrenheit: Double? = convertToFahrenheit(0.0).toDoubleOrNull()
         if (fahrenheit != null) {
-            assertEquals("Check Null", 0.0, fahrenheit, 0.0)
+            assertEquals("Check value", 0.0, fahrenheit, 0.0)
         }
     }
 
@@ -32,7 +32,7 @@ class JPLocationResponseTest {
     fun testNotUnixToTime() {
         val fahrenheit: Double? = convertTime(10000000).toDoubleOrNull()
         if (fahrenheit != null) {
-            assertEquals("Check Null", 0.0, fahrenheit, 0.0)
+            assertEquals("Check value", 0.0, fahrenheit, 0.0)
         }
     }
 
