@@ -57,7 +57,10 @@ class JPLocationLocationUtil {
         //Gets the list of address based on lat long
         val addresses: List<Address>? = geocoder.getFromLocation(latitude, longitude, 1)
         //Gets the city name
-        val cityName: String = addresses!![0].locality
+        var cityName: String=""
+        if(addresses!=null&&addresses.size>0)
+            cityName= addresses[0]?.locality ?: ""
+
         if(cityName!=null)
       return cityName
         else
