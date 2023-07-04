@@ -6,6 +6,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -54,6 +55,7 @@ class JPWeatherScreenActivity : AppCompatActivity() {
         //Obsered api from Live data, Using Retrofit get data and stored in live data- Retriving api validations in viewmodel class
         weatherViewModel.getCityWeather.observe(this, Observer<CityLocationResponse> { value ->
             binding.progressBar.setVisibility(View.GONE)
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
             /*  Weather details are comes in array . so i tried to disply all the descriptions, so user can understand better weather report
               eg: first array description is Mist
               Second one is description is rainy . So i displayed like Mist / rainy*/
@@ -88,6 +90,9 @@ class JPWeatherScreenActivity : AppCompatActivity() {
             binding.editSearchLocation.setText(shardpref.getCityLocationResponse()!!.name)
         } else
             binding.progressBar.setVisibility(View.VISIBLE)
+        getWindow().setFlags(
+            WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+            WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
         binding.editSearchLocation.setText(weatherViewModel.getLocation())
     }
 
