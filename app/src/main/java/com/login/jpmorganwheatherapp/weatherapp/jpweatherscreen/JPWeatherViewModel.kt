@@ -109,7 +109,6 @@ fun getContaxt(activity: JPWeatherScreenActivity, LocationUtil: JPLocationLocati
 
 return cityName;
     }
-
 }
 
 
